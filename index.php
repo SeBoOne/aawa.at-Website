@@ -24,26 +24,20 @@
 							<a class="nav-link" aria-current="page" href="#intro">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" rel="nofollow" target="_blank">Learn Bootstrap 5</a>
+							<a class="nav-link" href="#" target=""></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="https://mdbootstrap.com/docs/standard/" target="_blank">Download MDB UI KIT</a>
+							<a class="nav-link" href="#" target=""></a>
 						</li>
 					</ul>
 
 					<ul class="navbar-nav list-inline">
 					<!-- Icons -->
 						<li class="">
-							<a class="nav-link" href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" rel="nofollow" target="_blank"><i class="fab fa-youtube"></i></a>
-						</li>
-						<li class="">
-							<a class="nav-link" href="https://www.facebook.com/mdbootstrap" rel="nofollow" target="_blank"><i class="fab fa-facebook-f"></i></a>
+							<a class="nav-link" href="#" rel="nofollow" target=""><i class="fab fa-youtube"></i></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="https://twitter.com/MDBootstrap" rel="nofollow" target="_blank"><i class="fab fa-twitter"></i></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="https://github.com/mdbootstrap/mdb-ui-kit" rel="nofollow" target="_blank"><i class="fab fa-github"></i></a>
+							<a class="nav-link" href="#" rel="nofollow" target=""><i class="fab fa-twitter"></i></a>
 						</li>
 					</ul>
 				</div>
