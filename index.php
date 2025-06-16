@@ -15,7 +15,7 @@
 		<nav class="navbar navbar-expand-lg navbar-dark" style="z-index: 2000;">
 			<div class="container-fluid">
 				<!-- Navbar brand -->
-				<a class="navbar-brand nav-link" target="_blank" href="https://aawa.at"><strong>AAWA - Austrian Agency for World Architects</strong></a>
+				<a class="navbar-brand nav-link" href="https://aawa.at"><strong>AAWA - Austrian Agency for World Architects</strong></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
 				
 				<div class="collapse navbar-collapse" id="navbarExample01">
