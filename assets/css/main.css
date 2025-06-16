@@ -1,0 +1,30 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+	background-color: #282828;
+}
+
+header{
+	position: absolute;
+	width: 100vw;
+	z-index: 6000;
+}
+
+#section1{
+	background-color: pink;
+}
+
+#section2{
+	background-color: red;
+}
+
+#section3{
+	background-color: blue;
+}
+
+.content {
+    padding: 20px;
+    box-sizing: border-box;
+}
