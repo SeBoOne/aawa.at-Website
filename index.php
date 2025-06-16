@@ -16,7 +16,7 @@
 			<div class="container-fluid">
 				<!-- Navbar brand -->
 				<a class="navbar-brand nav-link" target="_blank" href="https://aawa.at"><strong>AAWA - Austrian Agency for World Architects</strong></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></button>
 				
 				<div class="collapse navbar-collapse" id="navbarExample01">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -49,7 +49,7 @@
 	
 		<div class="section active" id="section1">
 			<div class="content">
-				Inhalt Abschnitt 1<i class="fas fa-bars"></i>
+				Inhalt Abschnitt 1</i>
 			</div>
 		</div>
 		
