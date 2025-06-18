@@ -1,5 +1,5 @@
 new fullpage('#fullpage', {
-    //options here
+    licenseKey: '|"0GJ!M#i7',
     autoScrolling:true,
     scrollHorizontally: true
 });
