@@ -73,7 +73,13 @@
 	
 		<div class="section active" id="section1">
 			<div class="content">
-				Landing Page</i>
+
+				<div id="video"></div>
+
+				<div id="videoOverlay">
+					<h1>Austrian Agency <small>for</small> World Architects</h1>
+				</div>
+
 			</div>
 		</div>
 		
