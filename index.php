@@ -24,10 +24,13 @@
 							<a class="nav-link" aria-current="page" href="#intro">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#" target=""></a>
+							<a class="nav-link" href="#" target="">Wer sind wir</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#" target=""></a>
+							<a class="nav-link" href="#" target="">Unsere Abteilungen</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#" target="">Die SPARKS-Allianz</a>
 						</li>
 					</ul>
 
