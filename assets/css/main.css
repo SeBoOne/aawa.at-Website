@@ -46,3 +46,9 @@ header{
 	width: 100dvw;
 	height: 100dvh;
 }
+
+#videoOverlay #title {
+	position: absolute;
+	bottom: 15dvh;
+	left: 3dvw;
+}
