@@ -12,45 +12,56 @@
 
 	<header>
 
-		<nav class="navbar navbar-expand-lg navbar-dark">
-		  <a class="navbar-brand nav-link" href="https://aawa.at"><img src="/assets/img/AAWA_Logo_800x800.png" width="30" height="30" alt=""><strong>AAWA - Austrian Agency for World Architects</strong></a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		  </button>
+		<nav class="navbar navbar-expand-lg">
 
-		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-			  <li class="nav-item active">
-				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="#">Wer sind wir</a>
-			  </li>
-			  <li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				  Unsere Abteilungen
-				</a>
-				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				  <a class="dropdown-item" href="#">DEC</a>
-				  <a class="dropdown-item" href="#">MD</a>
-				  <a class="dropdown-item" href="#">MD</a>
-				  <a class="dropdown-item" href="#">AMD</a>
-				  <a class="dropdown-item" href="#">SD</a>
+			<div class="container-fluid">
+
+				<a class="navbar-brand nav-link" href="https://aawa.at"><img src="/assets/img/AAWA_Logo_800x800.png" width="30" height="30" alt=""><strong>AAWA - Austrian Agency for World Architects</strong></a>
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="#">Wer sind wir</a>
+						</li>
+
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Unsere Abteilungen
+							</a>
+
+							<ul class="dropdown-menu">
+								<a class="dropdown-item" href="#">DEC</a>
+								<a class="dropdown-item" href="#">MD</a>
+								<a class="dropdown-item" href="#">AMD</a>
+								<a class="dropdown-item" href="#">SD</a>
+							</ul>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="#">Die SPARKS-Allianz</a>
+						</li>
+
+					</ul>
+
+					<ul class="navbar-nav list-inline">
+						<li class="">
+							<a class="nav-link" href="#" rel="nofollow" target=""><i class="fab fa-youtube"></i></a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="#" rel="nofollow" target=""><i class="fab fa-twitter"></i></a>
+						</li>
+					</ul>
 				</div>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="#">Die SPARKS-Allianz</a>
-			  </li>
-			</ul>
-			<ul class="navbar-nav list-inline">
-				<li class="">
-					<a class="nav-link" href="#" rel="nofollow" target=""><i class="fab fa-youtube"></i></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#" rel="nofollow" target=""><i class="fab fa-twitter"></i></a>
-				</li>
-			</ul>
-		  </div>
+			</div>
 		</nav>
 		
 	</header>
