@@ -73,19 +73,25 @@
 	
 		<div class="section active" id="section1">
 			<div class="content">
-				Inhalt Abschnitt 1</i>
+				Landing Page</i>
 			</div>
 		</div>
 		
 		<div class="section" id="section2">
 			<div class="content">
-				Inhalt Abschnitt 2
+				Wer sind wir
 			</div>
 		</div>
 		
 		<div class="section" id="section3">
 			<div class="content">
-				Inhalt Abschnitt 3
+				Unsere Abteilungen
+			</div>
+		</div>
+		
+		<div class="section" id="section4">
+			<div class="content">
+				Die SPARKS-Allianz
 			</div>
 		</div>
 		
