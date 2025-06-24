@@ -12,6 +12,12 @@ header{
 	z-index: 6000;
 }
 
+.devPlaceholder {
+	text-align: center;
+	height: 100%;
+	padding-top: 300px;
+}
+
 #section1 {
 	background-color: grey;
 	background-image: url('../img/placeholder1.jpg');

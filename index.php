@@ -87,19 +87,25 @@
 		
 		<div class="section" id="section2">
 			<div class="content">
-				Wer sind wir
+				<div class="devPlaceholder">
+					<h1>Wer sind wir</h1>
+				</div>
 			</div>
 		</div>
 		
 		<div class="section" id="section3">
 			<div class="content">
-				Unsere Abteilungen
+				<div class="devPlaceholder">
+					<h1>Unsere Abteilungen</h1>
+				</div>
 			</div>
 		</div>
 		
 		<div class="section" id="section4">
 			<div class="content">
-				Die SPARKS-Allianz
+				<div class="devPlaceholder">
+					<h1>Die SPARKS-Allianz</h1>
+				</div>
 			</div>
 		</div>
 		
