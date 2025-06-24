@@ -12,14 +12,18 @@ header{
 	z-index: 6000;
 }
 
-#section1{
+#section1 {
 	background-color: grey;
 	background-image: url('../img/placeholder1.jpg');
+	background-size: cover;
+	background-position-x: center;
 }
 
 #section2 {
 	background-color: red;
 	background-image: url('../img/placeholder2.jpg');
+	background-size: cover;
+	background-position-x: center;
 }
 
 #section3{
