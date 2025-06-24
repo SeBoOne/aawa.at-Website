@@ -41,6 +41,8 @@ header{
 }
 
 .content {
-    padding: 20px;
-    box-sizing: border-box;
+	padding: 20px;
+	box-sizing: border-box;
+	width: 100dvw;
+	height: 100dvh;
 }
