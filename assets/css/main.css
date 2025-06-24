@@ -26,8 +26,18 @@ header{
 	background-position-x: center;
 }
 
-#section3{
+#section3 {
 	background-color: blue;
+	background-image: url('../img/placeholder3.jpg');
+	background-size: cover;
+	background-position-x: center;
+}
+
+#section4 {
+	background-color: green;
+	background-image: url('../img/placeholder4.jpg');
+	background-size: cover;
+	background-position-x: center;
 }
 
 .content {
