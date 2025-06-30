@@ -64,7 +64,22 @@ header{
 	height: 100dvh;
 }
 
-#videoOverlay #title {
+#section1 #video {
+	width: 100dvw;
+	height: 100dvh;
+	margin: -20px;
+	padding: 0;
+	overflow: hidden;
+}
+
+#section1 #video video {
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+}
+
+#section1 #videoOverlay #title {
 	position: absolute;
 	bottom: 15dvh;
 	left: 3dvw;
@@ -72,11 +87,11 @@ header{
 	font-variant: small-caps;
 }
 
-#videoOverlay #title p{
+#section1 #videoOverlay #title p {
 	margin: 0;
 }
 
-#videoOverlay #title p.h4 {
+#section1 #videoOverlay #title p.h4 {
 	margin: 0;
 	font-variant: none;
 	position: absolute;
