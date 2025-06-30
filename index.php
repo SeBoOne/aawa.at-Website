@@ -78,7 +78,7 @@
 
 				<div id="videoOverlay">
 					<div id="title">
-						<h1>Austrian Agency</h1> <h5>for</h5> <h1>World Architects</h1>
+						<p class="display-1" >Austrian Agency</p> <p class="display-6" >for</p> <p class="display-1" >World Architects</p>
 					</div>
 				</div>
 
