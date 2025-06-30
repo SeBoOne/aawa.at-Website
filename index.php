@@ -74,7 +74,11 @@
 		<div class="section active" id="section1">
 			<div class="content">
 
-				<div id="video"></div>
+				<div id="video">
+					<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+						<source src="/assets/img/AAWA_Compilation1.mp4" type="video/mp4">
+					</video>
+				</div>
 
 				<div id="videoOverlay">
 					<div id="title">
