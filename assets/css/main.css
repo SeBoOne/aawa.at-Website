@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Maven+Pro:wght@400..900&display=swap');
 @font-face {
 	font-family: 'Brocades Sans';
-	url('/assets/css/fonts/BrocadesSans.woff') format('woff')
+	src: url('/assets/css/fonts/BrocadesSans.woff') format('woff');
 }
 @font-face {
 	font-family: 'Ge Body';
-	url('/assets/css/fonts/GeBody.woff') format('woff')
+	src: url('/assets/css/fonts/GeBody.woff') format('woff');
 }
 
 body, html {
