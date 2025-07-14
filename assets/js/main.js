@@ -11,12 +11,14 @@ new fullpage('#fullpage', {
 
 
         if (destination.index == 0) {
-            nav.classList.add('border-bottom bg-opacity-50');
+            nav.classList.add('border-bottom');
+            nav.classList.add('bg-opacity-50');
             nav.classList.remove('bg-opacity-100');
         }
         if (origin.index == 0 && direction == "down") {
             nav.classList.add('bg-opacity-100');
-            nav.classList.remove('border-bottom bg-opacity-50');
+            nav.classList.remove('border-bottom');
+            nav.classList.remove('bg-opacity-50');
         }
 
     }
