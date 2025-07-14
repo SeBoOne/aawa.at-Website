@@ -4,3 +4,8 @@ new fullpage('#fullpage', {
     scrollHorizontally: true,
     credits: { enabled: false, label: 'i will put that in the footer later for now the others dont get it if i let that stay there atm.', position: 'right' },
 });
+
+
+activeSection = fullpage_api.getActiveSection();
+
+console.log(activeSection);
