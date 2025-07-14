@@ -23,14 +23,6 @@ header{
 	z-index: 6000;
 }
 
-nav {
-	background-color: #0015221a;
-}
-
-nav a{
-	color:white!important;
-}
-
 .devPlaceholder {
 	text-align: center;
 	height: 100%;
