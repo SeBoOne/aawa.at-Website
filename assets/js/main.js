@@ -6,7 +6,7 @@ new fullpage('#fullpage', {
     onLeave: function (origin, destination, direction, trigger) {
         var leavingSection = this;
 
-        console.log(leavingSection);
+        console.log(origin.index);
 
         //after leaving section 2
         if (origin.index == 1 && direction == 'down') {
