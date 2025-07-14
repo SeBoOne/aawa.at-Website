@@ -109,7 +109,7 @@ header{
 }
 
 
-//custom bootstrap
+/* custom bootstrap */
 .bg-dark-subtle-oc {
 	--bs-bg-opacity: 1;
 	background-color: rgba(26, 29, 32,var(--bs-bg-opacity)) !important;
