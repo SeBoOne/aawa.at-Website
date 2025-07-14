@@ -16,7 +16,7 @@
 
 	<header>
 
-		<nav class="navbar navbar-expand-lg">
+		<nav class="navbar navbar-expand-lg bg-dark-subtle-oc border-bottom bg-opacity-50">
 
 			<div class="container-fluid">
 
