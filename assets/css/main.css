@@ -23,6 +23,14 @@ header{
 	z-index: 6000;
 }
 
+nav {
+	background-color: #0015221a;
+}
+
+nav a{
+	color:white!important;
+}
+
 .devPlaceholder {
 	text-align: center;
 	height: 100%;
@@ -77,6 +85,15 @@ header{
 	min-height: 100%;
 	width: auto;
 	height: auto;
+}
+
+#section1 #videoOverlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #00000045;
 }
 
 #section1 #videoOverlay #title {
