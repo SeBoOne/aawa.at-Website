@@ -76,7 +76,7 @@
 
 				<div id="video">
 					<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-						<source src="/assets/img/AAWA_Compilation_scaled.mp4" type="video/mp4">
+						<source src="/assets/img/AAWA_Compilation1.mp4" type="video/mp4">
 					</video>
 				</div>
 
