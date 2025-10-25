@@ -7,19 +7,27 @@ new fullpage('#fullpage', {
         var leavingSection = this;
         var nav = document.querySelector('.navbar');
 
-        console.log(destination.index);
-
 
         if (destination.index == 0) {
-            nav.classList.add('border-bottom');
-            nav.classList.add('bg-opacity-10');
-            nav.classList.remove('bg-opacity-100');
         }
         if (origin.index == 0 && direction == "down") {
-            nav.classList.add('bg-opacity-100');
-            nav.classList.remove('border-bottom');
-            nav.classList.remove('bg-opacity-10');
         }
 
     }
 });
+
+// Ensure section3's container has top padding equal to the header/navbar height
+function adjustSection3Padding() {
+    var header = document.querySelector('header');
+    var container = document.querySelector('#section3 .js-padding');
+    if (!header || !container) return;
+    var h = header.offsetHeight;
+    // apply padding-top so the section title isn't hidden behind the fixed navbar
+    container.style.paddingTop = h + 'px';
+}
+
+// Run on load and resize
+window.addEventListener('load', adjustSection3Padding);
+window.addEventListener('resize', adjustSection3Padding);
+// Also run once immediately in case the script runs after load
+adjustSection3Padding();

@@ -6,6 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AAWA - Austrian Agancy for World Architects</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/fullpage.css">
@@ -14,9 +15,9 @@
 
 <body>
 
-	<header>
+	<header class="border-bottom bg-dark-subtle-oc bg-opacity-10">
 
-		<nav class="navbar navbar-expand-lg bg-dark-subtle-oc border-bottom bg-opacity-10">
+		<nav class="navbar navbar-expand-lg">
 
 			<div class="container-fluid">
 
@@ -101,9 +102,50 @@
 		
 		<div class="section" id="section3">
 			<div class="content">
-				<div class="devPlaceholder">
-					<h1>Unsere Abteilungen</h1>
-				</div>
+				<section class="text-center d-flex flex-column h-100" aria-labelledby="departments-heading">
+					<div class="js-padding d-flex flex-column flex-grow-1">
+						<h2 id="departments-heading" class="mb-4">Unsere Abteilungen</h2>
+						<p class="lead mb-5">Unsere Organisation gliedert sich in vier Kernabteilungen. Wähle eine Abteilung für mehr Informationen.</p>
+						<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 flex-grow-1 align-items-stretch mx-0">
+							<!-- DEC -->
+							<div id="DEC-Card" class="col d-flex">
+								<div class="card h-100 shadow-sm bg-dark text-white d-flex flex-column w-100">
+									<div class="card-body d-flex flex-column flex-grow-1">
+										<p class="mt-lg-card card-text">Department of Engineering and Construction — zuständig für Architektur, Layouts und technische Konzepte innerhalb unserer Organisation.</p>
+										<a href="#DEC" class="mt-auto btn">Mehr erfahren</a>
+									</div>
+								</div>
+							</div>
+							<!-- MD -->
+							<div id="MD-Card" class="col d-flex">
+								<div class="card h-100 shadow-sm text-white d-flex flex-column w-100">
+									<div class="card-body d-flex flex-column flex-grow-1">
+										<p class="mt-lg-card card-text">Merchant Department — Verantwortlich für Handel und Wirtschaftsbeziehungen innerhalb der Organisation.</p>
+										<a href="#MD" class="mt-auto btn">Mehr erfahren</a>
+									</div>
+								</div>
+							</div>
+							<!-- AMD -->
+							<div id="AMD-Card" class="col d-flex">
+								<div class="card h-100 shadow-sm bg-dark text-white d-flex flex-column w-100">
+									<div class="card-body d-flex flex-column flex-grow-1">
+										<p class="mt-lg-card card-text">Assistance and Maintenance Department — Zuständig für Instandhaltung, Wartung und Supportorganisationseinrichtungen und -fahrzeuge.</p>
+										<a href="#AMD" class="mt-auto btn">Mehr erfahren</a>
+									</div>
+								</div>
+							</div>
+							<!-- SD -->
+							<div id="SD-Card" class="col d-flex">
+								<div class="card h-100 shadow-sm bg-dark text-white d-flex flex-column w-100">
+									<div class="card-body d-flex flex-column flex-grow-1">
+										<p class="mt-lg-card card-text">Security Department — Sorgt für Schutz und Sicherheit der Organisation, inklusive physischer und Cyber-Sicherheit.</p>
+										<a href="#SD" class="mt-auto btn">Mehr erfahren</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					</section>
 			</div>
 		</div>
 		

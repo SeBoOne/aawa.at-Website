@@ -21,6 +21,8 @@ header{
 	position: absolute;
 	width: 100vw;
 	z-index: 6000;
+	padding: 25px;
+	backdrop-filter: blur(10px);
 }
 
 header .navbar {
@@ -112,8 +114,63 @@ header .navbar {
 	bottom: 6.8rem;
 }
 
+#section3 #DEC-Card .card{
+	background-image: url(../img/dec.png);
+	background-size: cover;
+}
+
+#DEC-Card .card .btn{
+	margin-bottom: -1rem;
+	line-height: 3rem;
+	margin-left: -1rem;
+	margin-right: -1rem;
+}
+
+#section3 #MD-Card .card{
+	background-image: url(../img/mn.png);
+	background-size: cover;
+}
+
+#MD-Card .card .btn{
+	margin-bottom: -1rem;
+	line-height: 3rem;
+	margin-left: -1rem;
+	margin-right: -1rem;
+}
+
+#section3 #AMD-Card .card{
+	background-image: url(../img/ams.png);
+	background-size: cover;
+}
+
+#AMD-Card .card .btn{
+	margin-bottom: -1rem;
+	line-height: 3rem;
+	margin-left: -1rem;
+	margin-right: -1rem;
+}
+
+#section3 #SD-Card .card{
+	background-image: url(../img/sf.png);
+	background-size: cover;
+
+}
+
+#SD-Card .card .btn{
+	margin-bottom: -1rem;
+	line-height: 3rem;
+	margin-left: -1rem;
+	margin-right: -1rem;
+}
 
 /* custom bootstrap */
 .bg-dark-subtle-oc {
 	background-color: rgba(26, 29, 32,var(--bs-bg-opacity)) !important;
+}
+
+@media (min-width: 992px) {
+  .mt-lg-card {
+    margin-top: 22rem !important;
+	text-shadow: 0 0 15px black;
+  }
 }
