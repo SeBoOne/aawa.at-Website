@@ -94,9 +94,35 @@
 		
 		<div class="section" id="section2">
 			<div class="content">
-				<div class="devPlaceholder">
-					<h1>Wer sind wir</h1>
-				</div>
+				<section class="py-5 text-light" aria-labelledby="who-heading">
+					<div class="container js-padding">
+						<img src="/assets/img/AAWA_Logo_800x800.png" alt="AAWA Logo" class="who-logo mb-3 mx-auto d-block" />
+						<h2 id="who-heading" class="mb-3">Wer sind wir</h2>
+						<p class="lead mb-4">Wir sind die Austrian Agency for World Architects (AAWA) — eine engagierte Community von Spielern und Erbauern in Star Citizen. Unser Ziel ist es, gemeinsame Projekte zu planen, sichere Handels- und Einsatzrouten zu etablieren und eine freundliche Umgebung für neue und erfahrene Mitglieder bereitzustellen.</p>
+						<div class="row g-4 mb-4">
+							<div class="col-md-4 text-start">
+								<h5><i class="fas fa-bullseye me-2 text-primary"></i>Mission</h5>
+								<p>Wir koordinieren Bau- und Forschungsprojekte, unterstützen taktische Einsätze und fördern Teamplay über alle Sektoren hinweg.</p>
+							</div>
+							<div class="col-md-4 text-start">
+								<h5><i class="fas fa-eye me-2 text-success"></i>Vision</h5>
+								<p>Eine vernetzte Community, die kreative Weltgestaltung und faire, organisierte Multiplayer-Erlebnisse im Universum von Star Citizen ermöglicht.</p>
+							</div>
+							<div class="col-md-4 text-start">
+								<h5><i class="fas fa-hands-helping me-2 text-warning"></i>Werte</h5>
+								<p>Respekt, Zuverlässigkeit und Hilfsbereitschaft stehen bei uns im Mittelpunkt — sowohl im Spiel als auch in der Community.</p>
+							</div>
+						</div>
+						<div class="row align-items-center">
+							<div class="col-lg-8">
+								<p>Unsere Mitglieder kommen aus verschiedenen Hintergründen — Baukünstler, Händler, Ingenieure und Wächter — und bringen ihre Stärken in Projekte ein. Egal ob du neu im Spiel bist oder ein erfahrener Pilot: Bei uns findest du Unterstützung und Mitspieler.</p>
+							</div>
+							<div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+								<a href="#section3" class="btn btn-outline-light">Zu unseren Abteilungen</a>
+							</div>
+						</div>
+					</div>
+				</section>
 			</div>
 		</div>
 		

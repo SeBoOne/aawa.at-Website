@@ -44,6 +44,7 @@ header .navbar {
 	box-sizing: border-box;
 	width: 100dvw;
 	height: 100dvh;
+	overflow: hidden;
 }
 /* Section 1 - Video Background */
 #section1 #video {
@@ -89,8 +90,27 @@ header .navbar {
 	right: 0;
 	bottom: 6.8rem;
 }
+/* Section 1 - End */
+
+/* Section 2 - Who We Are */
+
+
+/* Who section logo */
+
+.who-logo{
+		width: 140px;
+		height: auto;
+		filter: drop-shadow(0 6px 16px rgba(0,0,0,0.6));
+}
+
+@media (min-width: 992px){
+		.who-logo{ width: 220px; }
+}
+
+/* Section 2 - End */
 
 /* Section 3 - Departments */
+
 #section3 {
 	overflow: hidden;
 }
@@ -99,43 +119,84 @@ header .navbar {
 	padding: 20px 0 0 0;
 }
 
-#section3 #DEC-Card.animateIn{
+/* Section 3 - Animations */
+
+#section3 #DEC-Card.animateInDown{
 	animation: fadeInDown;
 	animation-duration: 1.2s;
 }
-#section3 #MD-Card.animateIn{
+#section3 #MD-Card.animateInDown{
 	animation: fadeInDown;
 	animation-duration: 1.5s;
 }
-#section3 #AMD-Card.animateIn{
+#section3 #AMD-Card.animateInDown{
 	animation: fadeInDown;
 	animation-duration: 1.8s;
 }
-#section3 #SD-Card.animateIn{
+#section3 #SD-Card.animateInDown{
 	animation: fadeInDown;
 	animation-duration: 2.1s;
 }
 
-#section3 #DEC-Card.animateOut{
-	animation: fadeOutLeft;
+#section3 #DEC-Card.animateInUp{
+	animation: fadeInUp;
+	animation-duration: 1.2s;
+}
+#section3 #MD-Card.animateInUp{
+	animation: fadeInUp;
+	animation-duration: 1.5s;
+}
+#section3 #AMD-Card.animateInUp{
+	animation: fadeInUp;
+	animation-duration: 1.8s;
+}
+#section3 #SD-Card.animateInUp{
+	animation: fadeInUp;
+	animation-duration: 2.1s;
+}
+
+#section3 #DEC-Card.animateOutUp{
+	animation: fadeOutUp;
+	animation-duration: 0.1s;
+	opacity: 0;
+}
+#section3 #MD-Card.animateOutUp{
+	animation: fadeOutUp;
+	animation-duration: 0.2s;
+	opacity: 0;
+}
+#section3 #AMD-Card.animateOutUp{
+	animation: fadeOutUp;
+	animation-duration: 0.4s;
+	opacity: 0;
+}
+#section3 #SD-Card.animateOutUp{
+	animation: fadeOutUp;
 	animation-duration: 0.5s;
 	opacity: 0;
 }
-#section3 #MD-Card.animateOut{
-	animation: fadeOutLeft;
+
+#section3 #DEC-Card.animateOutDown{
+	animation: fadeOutDown;
+	animation-duration: 0.1s;
+	opacity: 0;
+}
+#section3 #MD-Card.animateOutDown{
+	animation: fadeOutDown;
+	animation-duration: 0.2s;
+	opacity: 0;
+}
+#section3 #AMD-Card.animateOutDown{
+	animation: fadeOutDown;
+	animation-duration: 0.4s;
+	opacity: 0;
+}
+#section3 #SD-Card.animateOutDown{
+	animation: fadeOutDown;
 	animation-duration: 0.5s;
 	opacity: 0;
 }
-#section3 #AMD-Card.animateOut{
-	animation: fadeOutRight;
-	animation-duration: 0.5s;
-	opacity: 0;
-}
-#section3 #SD-Card.animateOut{
-	animation: fadeOutRight;
-	animation-duration: 0.5s;
-	opacity: 0;
-}
+/* Section 3 - Card Hover Effects */
 
 #section3 .cards{
 	position: relative;
@@ -200,21 +261,19 @@ header .navbar {
 
 #section3 .card-image{
 	width: 13rem;
-	margin: 0 auto auto auto;	
+	margin: 0 auto auto auto;
+	transition: .5s filter;
+}
+
+#section3 .cards:hover .card-image{
+	filter: drop-shadow(0px 0px 10px black);
 }
 
 #section3 .card-title{
 	text-shadow: 0 0 15px black;
 }
 
-/*
-#section3 .cards .btn{
-	margin-bottom: -1rem;
-	line-height: 3rem;
-	margin-left: -1rem;
-	margin-right: -1rem;
-}
-*/
+/* Section 3 - End */
 
 /* custom bootstrap */
 .bg-dark-subtle-oc {
@@ -225,4 +284,21 @@ header .navbar {
   .mt-lg-card {
 	text-shadow: 0 0 15px black;
   }
+}
+
+/* Readability panel for the Who-we-are section only — doesn't darken the overall background */
+#section2 .js-padding{
+		background: rgba(0,0,0,0.45);
+		-webkit-backdrop-filter: blur(6px);
+		backdrop-filter: blur(6px);
+		border-radius: 12px;
+		padding: 2rem 1.5rem; /* top will be overridden by JS paddingTop to account for header height */
+		box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+@media (max-width: 575.98px){
+		#section2 .js-padding{
+				padding: 1.5rem 1rem;
+				background: rgba(0,0,0,0.55);
+		}
 }

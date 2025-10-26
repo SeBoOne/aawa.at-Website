@@ -8,42 +8,61 @@ new fullpage('#fullpage', {
         var nav = document.querySelector('.navbar');
 
 
-        if (destination.index == 2) {
-            document.getElementById('DEC-Card').classList.add('animateIn');
-            document.getElementById('DEC-Card').classList.remove('animateOut');
-            document.getElementById('MD-Card').classList.add('animateIn');
-            document.getElementById('MD-Card').classList.remove('animateOut');
-            document.getElementById('AMD-Card').classList.add('animateIn');
-            document.getElementById('AMD-Card').classList.remove('animateOut');
-            document.getElementById('SD-Card').classList.add('animateIn');
-            document.getElementById('SD-Card').classList.remove('animateOut');
+        if (origin.index == 1 && destination.index == 2) {
+            document.getElementById('DEC-Card').classList.add('animateInUp');
+            document.getElementById('DEC-Card').classList.remove('animateOutDown');
+            document.getElementById('MD-Card').classList.add('animateInUp');
+            document.getElementById('MD-Card').classList.remove('animateOutDown');
+            document.getElementById('AMD-Card').classList.add('animateInUp');
+            document.getElementById('AMD-Card').classList.remove('animateOutDown');
+            document.getElementById('SD-Card').classList.add('animateInUp');
+            document.getElementById('SD-Card').classList.remove('animateOutDown');
         }
-        if (origin.index == 2 && (direction == "down" || direction == "up")) {
-            document.getElementById('DEC-Card').classList.remove('animateIn');
-            document.getElementById('DEC-Card').classList.add('animateOut');
-            document.getElementById('MD-Card').classList.remove('animateIn');
-            document.getElementById('MD-Card').classList.add('animateOut');
-            document.getElementById('AMD-Card').classList.remove('animateIn');
-            document.getElementById('AMD-Card').classList.add('animateOut');
-            document.getElementById('SD-Card').classList.remove('animateIn');
-            document.getElementById('SD-Card').classList.add('animateOut');
+        if (origin.index == 3 && destination.index == 2) {
+            document.getElementById('DEC-Card').classList.add('animateInDown');
+            document.getElementById('DEC-Card').classList.remove('animateOutUp');
+            document.getElementById('MD-Card').classList.add('animateInDown');
+            document.getElementById('MD-Card').classList.remove('animateOutUp');
+            document.getElementById('AMD-Card').classList.add('animateInDown');
+            document.getElementById('AMD-Card').classList.remove('animateOutUp');
+            document.getElementById('SD-Card').classList.add('animateInDown');
+            document.getElementById('SD-Card').classList.remove('animateOutUp');
+        }
+        if (origin.index == 2 && direction == "down") {
+            document.getElementById('DEC-Card').classList.remove('animateInUp');
+            document.getElementById('DEC-Card').classList.add('animateOutUp');
+            document.getElementById('MD-Card').classList.remove('animateInUp');
+            document.getElementById('MD-Card').classList.add('animateOutUp');
+            document.getElementById('AMD-Card').classList.remove('animateInUp');
+            document.getElementById('AMD-Card').classList.add('animateOutUp');
+            document.getElementById('SD-Card').classList.remove('animateInUp');
+            document.getElementById('SD-Card').classList.add('animateOutUp');
+        }
+        if (origin.index == 2 && direction == "up") {
+            document.getElementById('DEC-Card').classList.remove('animateInDown');
+            document.getElementById('DEC-Card').classList.add('animateOutDown');
+            document.getElementById('MD-Card').classList.remove('animateInDown');
+            document.getElementById('MD-Card').classList.add('animateOutDown');
+            document.getElementById('AMD-Card').classList.remove('animateInDown');
+            document.getElementById('AMD-Card').classList.add('animateOutDown');
+            document.getElementById('SD-Card').classList.remove('animateInDown');
+            document.getElementById('SD-Card').classList.add('animateOutDown');
         }
 
     }
 });
 
-// Ensure section3's container has top padding equal to the header/navbar height
+
 function adjustSection3Padding() {
     var header = document.querySelector('header');
-    var container = document.querySelector('#section3 .js-padding');
-    if (!header || !container) return;
+    if (!header) return;
     var h = header.offsetHeight;
-    // apply padding-top so the section title isn't hidden behind the fixed navbar
-    container.style.paddingTop = h + 'px';
+    var containers = document.querySelectorAll('.js-padding');
+    containers.forEach(function(container){
+        container.style.paddingTop = h + 'px';
+    });
 }
 
-// Run on load and resize
 window.addEventListener('load', adjustSection3Padding);
 window.addEventListener('resize', adjustSection3Padding);
-// Also run once immediately in case the script runs after load
 adjustSection3Padding();
