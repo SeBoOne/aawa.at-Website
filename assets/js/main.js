@@ -8,9 +8,25 @@ new fullpage('#fullpage', {
         var nav = document.querySelector('.navbar');
 
 
-        if (destination.index == 0) {
+        if (destination.index == 2) {
+            document.getElementById('DEC-Card').classList.add('animateIn');
+            document.getElementById('DEC-Card').classList.remove('animateOut');
+            document.getElementById('MD-Card').classList.add('animateIn');
+            document.getElementById('MD-Card').classList.remove('animateOut');
+            document.getElementById('AMD-Card').classList.add('animateIn');
+            document.getElementById('AMD-Card').classList.remove('animateOut');
+            document.getElementById('SD-Card').classList.add('animateIn');
+            document.getElementById('SD-Card').classList.remove('animateOut');
         }
-        if (origin.index == 0 && direction == "down") {
+        if (origin.index == 2 && (direction == "down" || direction == "up")) {
+            document.getElementById('DEC-Card').classList.remove('animateIn');
+            document.getElementById('DEC-Card').classList.add('animateOut');
+            document.getElementById('MD-Card').classList.remove('animateIn');
+            document.getElementById('MD-Card').classList.add('animateOut');
+            document.getElementById('AMD-Card').classList.remove('animateIn');
+            document.getElementById('AMD-Card').classList.add('animateOut');
+            document.getElementById('SD-Card').classList.remove('animateIn');
+            document.getElementById('SD-Card').classList.add('animateOut');
         }
 
     }

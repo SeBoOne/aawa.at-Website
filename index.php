@@ -106,39 +106,51 @@
 					<div class="js-padding d-flex flex-column flex-grow-1">
 						<h2 id="departments-heading" class="mb-4">Unsere Abteilungen</h2>
 						<p class="lead mb-5">Unsere Organisation gliedert sich in vier Kernabteilungen. Wähle eine Abteilung für mehr Informationen.</p>
-						<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 flex-grow-1 align-items-stretch mx-0">
+						<div class="g-4 flex-grow-1 align-items-stretch mx-0 d-flex">
 							<!-- DEC -->
 							<div id="DEC-Card" class="col d-flex">
-								<div class="card h-100 shadow-sm bg-dark text-white d-flex flex-column w-100">
+								<div class="cards card h-100 shadow-sm text-white d-flex flex-column w-100">
 									<div class="card-body d-flex flex-column flex-grow-1">
-										<p class="mt-lg-card card-text">Department of Engineering and Construction — zuständig für Architektur, Layouts und technische Konzepte innerhalb unserer Organisation.</p>
+										<img class="card-image" src="assets/img/aawa_dep-logos/AAWA_Patches_DEC_klein.png" alt="DEC">
+										<h2 class="card-title">DEC</h2>
+										<h5 class="card-title">Department of Engineering and Construction</h5>
+										<p class="mt-lg-card card-text">Wir machen keine Hausbesuche,<br> wir sind das Haus!</p>
 										<a href="#DEC" class="mt-auto btn">Mehr erfahren</a>
 									</div>
 								</div>
 							</div>
 							<!-- MD -->
 							<div id="MD-Card" class="col d-flex">
-								<div class="card h-100 shadow-sm text-white d-flex flex-column w-100">
+								<div class="cards card h-100 shadow-sm text-white d-flex flex-column w-100">
 									<div class="card-body d-flex flex-column flex-grow-1">
-										<p class="mt-lg-card card-text">Merchant Department — Verantwortlich für Handel und Wirtschaftsbeziehungen innerhalb der Organisation.</p>
+										<img class="card-image" src="assets/img/aawa_dep-logos/AAWA_Patches_MD_klein.png" alt="MD">
+										<h2 class="card-title">MD</h2>
+										<h5 class="card-title">Merchant Department</h5>
+										<p class="mt-lg-card card-text">Atlas trägt die Welt auf seinen Schultern...<br>Den Rest besorgen wir!</p>
 										<a href="#MD" class="mt-auto btn">Mehr erfahren</a>
 									</div>
 								</div>
 							</div>
 							<!-- AMD -->
 							<div id="AMD-Card" class="col d-flex">
-								<div class="card h-100 shadow-sm bg-dark text-white d-flex flex-column w-100">
+								<div class="cards card h-100 shadow-sm text-white d-flex flex-column w-100">
 									<div class="card-body d-flex flex-column flex-grow-1">
-										<p class="mt-lg-card card-text">Assistance and Maintenance Department — Zuständig für Instandhaltung, Wartung und Supportorganisationseinrichtungen und -fahrzeuge.</p>
+										<img class="card-image" src="assets/img/aawa_dep-logos/AAWA_Patches_AMD_klein.png" alt="AMD">
+										<h2 class="card-title">AMD</h2>
+										<h5 class="card-title">Assistance and Maintenance Department</h5>
+										<p class="mt-lg-card card-text">Die Butter auf deinem Brot!<br>Die Kugel in deinem Lauf!</p>
 										<a href="#AMD" class="mt-auto btn">Mehr erfahren</a>
 									</div>
 								</div>
 							</div>
 							<!-- SD -->
 							<div id="SD-Card" class="col d-flex">
-								<div class="card h-100 shadow-sm bg-dark text-white d-flex flex-column w-100">
+								<div class="cards card h-100 shadow-sm text-white d-flex flex-column w-100">
 									<div class="card-body d-flex flex-column flex-grow-1">
-										<p class="mt-lg-card card-text">Security Department — Sorgt für Schutz und Sicherheit der Organisation, inklusive physischer und Cyber-Sicherheit.</p>
+										<img class="card-image" src="assets/img/aawa_dep-logos/AAWA_Patches_SD_klein.png" alt="SD">
+										<h2 class="card-title">SD</h2>
+										<h5 class="card-title">Security Department</h5>
+										<p class="mt-lg-card card-text">An deiner Seite!<br> Aber dem Gegner im Genick...</p>
 										<a href="#SD" class="mt-auto btn">Mehr erfahren</a>
 									</div>
 								</div>

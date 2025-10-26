@@ -1,4 +1,6 @@
+@import url('animate.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Maven+Pro:wght@400..900&display=swap');
+
 @font-face {
 	font-family: 'Brocades Sans';
 	src: url('/assets/css/fonts/BrocadesSans.woff') format('woff');
@@ -37,20 +39,13 @@ header .navbar {
 	padding-top: 300px;
 }
 
-#section1 {
-	background-color: grey;
-	background-image: url('../img/placeholder1.jpg');
-	background-size: cover;
-	background-position-x: center;
-}
-
 .content {
 	padding: 20px;
 	box-sizing: border-box;
 	width: 100dvw;
 	height: 100dvh;
 }
-
+/* Section 1 - Video Background */
 #section1 #video {
 	width: 100dvw;
 	height: 100dvh;
@@ -95,54 +90,131 @@ header .navbar {
 	bottom: 6.8rem;
 }
 
-#section3 #DEC-Card .card{
-	background-image: url(../img/dec.png);
-	background-size: cover;
+/* Section 3 - Departments */
+#section3 {
+	overflow: hidden;
 }
 
-#DEC-Card .card .btn{
+#section3 .content{
+	padding: 20px 0 0 0;
+}
+
+#section3 #DEC-Card.animateIn{
+	animation: fadeInDown;
+	animation-duration: 1.2s;
+}
+#section3 #MD-Card.animateIn{
+	animation: fadeInDown;
+	animation-duration: 1.5s;
+}
+#section3 #AMD-Card.animateIn{
+	animation: fadeInDown;
+	animation-duration: 1.8s;
+}
+#section3 #SD-Card.animateIn{
+	animation: fadeInDown;
+	animation-duration: 2.1s;
+}
+
+#section3 #DEC-Card.animateOut{
+	animation: fadeOutLeft;
+	animation-duration: 0.5s;
+	opacity: 0;
+}
+#section3 #MD-Card.animateOut{
+	animation: fadeOutLeft;
+	animation-duration: 0.5s;
+	opacity: 0;
+}
+#section3 #AMD-Card.animateOut{
+	animation: fadeOutRight;
+	animation-duration: 0.5s;
+	opacity: 0;
+}
+#section3 #SD-Card.animateOut{
+	animation: fadeOutRight;
+	animation-duration: 0.5s;
+	opacity: 0;
+}
+
+#section3 .cards{
+	position: relative;
+	overflow: hidden;
+	border: none;
+	border-radius: 0;
+}
+
+#section3 #DEC-Card .cards{
+	background: linear-gradient(0deg,rgba(46, 94, 144, 1) 10%, rgba(46, 94, 144, 0) 65%);
+}
+
+#section3 #MD-Card .cards{
+	background: linear-gradient(0deg,rgba(154, 50, 51, 1) 10%, rgba(255, 255, 255, 0) 65%);
+}
+
+#section3 #AMD-Card .cards{
+	background: linear-gradient(0deg,rgba(103, 62, 23, 1) 10%, rgba(255, 255, 255, 0) 65%);
+}
+
+#section3 #SD-Card .cards{
+	background: linear-gradient(0deg,rgba(47, 73, 127, 1) 10%, rgba(255, 255, 255, 0) 65%);
+}
+
+#section3 .cards::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	transform-origin: bottom center;
+	transform: scaleY(0);
+	transition: transform .6s cubic-bezier(.2,.9,.2,1);
+	z-index: 0;
+	pointer-events: none;
+}
+
+#section3 .cards .card-body{
+	position: relative;
+	z-index: 1;
+}
+
+#section3 #DEC-Card .cards::after{
+	background: linear-gradient(0deg, rgba(46, 94, 144, 1) 0%, rgba(46, 94, 144, 0.95) 40%, rgba(46, 94, 144, 0.75) 65%, rgba(46,94,144,0.6) 85%);
+}
+#section3 #MD-Card .cards::after{
+	background: linear-gradient(0deg, rgba(154, 50, 51, 1) 0%, rgba(154, 50, 51, 0.95) 40%, rgba(154,50,51,0.75) 65%, rgba(154,50,51,0.6) 85%);
+}
+#section3 #AMD-Card .cards::after{
+	background: linear-gradient(0deg, rgba(103, 62, 23, 1) 0%, rgba(103, 62, 23, 0.95) 40%, rgba(103,62,23,0.75) 65%, rgba(103,62,23,0.6) 85%);
+}
+#section3 #SD-Card .cards::after{
+	background: linear-gradient(0deg, rgba(47, 73, 127, 1) 0%, rgba(47, 73, 127, 0.95) 40%, rgba(47,73,127,0.75) 65%, rgba(47,73,127,0.6) 85%);
+}
+
+#section3 .cards:hover::after,
+#section3 .cards:focus-within::after,
+#section3 .cards.fill::after{
+	transform: scaleY(1);
+}
+
+#section3 .card-image{
+	width: 13rem;
+	margin: 0 auto auto auto;	
+}
+
+#section3 .card-title{
+	text-shadow: 0 0 15px black;
+}
+
+/*
+#section3 .cards .btn{
 	margin-bottom: -1rem;
 	line-height: 3rem;
 	margin-left: -1rem;
 	margin-right: -1rem;
 }
-
-#section3 #MD-Card .card{
-	background-image: url(../img/mn.png);
-	background-size: cover;
-}
-
-#MD-Card .card .btn{
-	margin-bottom: -1rem;
-	line-height: 3rem;
-	margin-left: -1rem;
-	margin-right: -1rem;
-}
-
-#section3 #AMD-Card .card{
-	background-image: url(../img/ams.png);
-	background-size: cover;
-}
-
-#AMD-Card .card .btn{
-	margin-bottom: -1rem;
-	line-height: 3rem;
-	margin-left: -1rem;
-	margin-right: -1rem;
-}
-
-#section3 #SD-Card .card{
-	background-image: url(../img/sf.png);
-	background-size: cover;
-
-}
-
-#SD-Card .card .btn{
-	margin-bottom: -1rem;
-	line-height: 3rem;
-	margin-left: -1rem;
-	margin-right: -1rem;
-}
+*/
 
 /* custom bootstrap */
 .bg-dark-subtle-oc {
@@ -151,7 +223,6 @@ header .navbar {
 
 @media (min-width: 992px) {
   .mt-lg-card {
-    margin-top: 22rem !important;
 	text-shadow: 0 0 15px black;
   }
 }
