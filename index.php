@@ -94,31 +94,37 @@
 		
 		<div class="section" id="section2">
 			<div class="content">
-				<section class="py-5 text-light" aria-labelledby="who-heading">
-					<div class="container js-padding">
-						<img src="/assets/img/AAWA_Logo_800x800.png" alt="AAWA Logo" class="who-logo mb-3 mx-auto d-block" />
-						<h2 id="who-heading" class="mb-3">Wer sind wir</h2>
-						<p class="lead mb-4">Wir sind die Austrian Agency for World Architects (AAWA) — eine engagierte Community von Spielern und Erbauern in Star Citizen. Unser Ziel ist es, gemeinsame Projekte zu planen, sichere Handels- und Einsatzrouten zu etablieren und eine freundliche Umgebung für neue und erfahrene Mitglieder bereitzustellen.</p>
-						<div class="row g-4 mb-4">
-							<div class="col-md-4 text-start">
-								<h5><i class="fas fa-bullseye me-2 text-primary"></i>Mission</h5>
-								<p>Wir koordinieren Bau- und Forschungsprojekte, unterstützen taktische Einsätze und fördern Teamplay über alle Sektoren hinweg.</p>
+				<section class="py-5 text-light d-flex flex-column h-100" aria-labelledby="who-heading">
+					<div class="container-fluid js-padding d-flex flex-column h-100">
+						<div class="row h-100 align-items-stretch justify-content-center gx-4">
+							<div class="col-12 col-lg-4 text-center mb-4 mb-lg-0 d-flex align-items-center justify-content-center h-100 order-2 order-lg-1">
+								<img src="/assets/img/AAWA_Logo_800x800.png" alt="AAWA Logo" class="aawa-logo img-fluid" />
 							</div>
-							<div class="col-md-4 text-start">
-								<h5><i class="fas fa-eye me-2 text-success"></i>Vision</h5>
-								<p>Eine vernetzte Community, die kreative Weltgestaltung und faire, organisierte Multiplayer-Erlebnisse im Universum von Star Citizen ermöglicht.</p>
-							</div>
-							<div class="col-md-4 text-start">
-								<h5><i class="fas fa-hands-helping me-2 text-warning"></i>Werte</h5>
-								<p>Respekt, Zuverlässigkeit und Hilfsbereitschaft stehen bei uns im Mittelpunkt — sowohl im Spiel als auch in der Community.</p>
-							</div>
-						</div>
-						<div class="row align-items-center">
-							<div class="col-lg-8">
-								<p>Unsere Mitglieder kommen aus verschiedenen Hintergründen — Baukünstler, Händler, Ingenieure und Wächter — und bringen ihre Stärken in Projekte ein. Egal ob du neu im Spiel bist oder ein erfahrener Pilot: Bei uns findest du Unterstützung und Mitspieler.</p>
-							</div>
-							<div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
-								<a href="#section3" class="btn btn-outline-light">Zu unseren Abteilungen</a>
+							<div class="col-12 col-lg-8 d-flex flex-column justify-content-center h-100 order-1 order-lg-2">
+								<h2 id="who-heading" class="mb-3">Wer sind wir</h2>
+								<p class="lead mb-4">Wir sind die Austrian Agency for World Architects (AAWA) — eine engagierte Community von Spielern und Erbauern in Star Citizen. Unser Ziel ist es, gemeinsame Projekte zu planen, sichere Handels- und Einsatzrouten zu etablieren und eine freundliche Umgebung für neue und erfahrene Mitglieder bereitzustellen.</p>
+								<div class="row g-4 mb-4">
+									<div class="col-md-4 text-start">
+										<h5><i class="fas fa-bullseye me-2 text-primary"></i>Mission</h5>
+										<p>Wir koordinieren Bau- und Forschungsprojekte, unterstützen taktische Einsätze und fördern Teamplay über alle Sektoren hinweg.</p>
+									</div>
+									<div class="col-md-4 text-start">
+										<h5><i class="fas fa-eye me-2 text-success"></i>Vision</h5>
+										<p>Eine vernetzte Community, die kreative Weltgestaltung und faire, organisierte Multiplayer-Erlebnisse im Universum von Star Citizen ermöglicht.</p>
+									</div>
+									<div class="col-md-4 text-start">
+										<h5><i class="fas fa-hands-helping me-2 text-warning"></i>Werte</h5>
+										<p>Respekt, Zuverlässigkeit und Hilfsbereitschaft stehen bei uns im Mittelpunkt — sowohl im Spiel als auch in der Community.</p>
+									</div>
+								</div>
+								<div class="row align-items-center">
+									<div class="col-lg-8">
+										<p>Unsere Mitglieder kommen aus verschiedenen Hintergründen — Baukünstler, Händler, Ingenieure und Wächter — und bringen ihre Stärken in Projekte ein. Egal ob du neu im Spiel bist oder ein erfahrener Pilot: Bei uns findest du Unterstützung und Mitspieler.</p>
+									</div>
+									<div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+										<a href="#" class="btn btn-outline-light btn-lg btn-toolbar">Mehr zu uns...</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -189,9 +195,30 @@
 		
 		<div class="section" id="section4">
 			<div class="content">
-				<div class="devPlaceholder">
-					<h1>Die SPARKS-Allianz</h1>
-				</div>
+				<section class="py-5 text-light d-flex flex-column h-100" aria-labelledby="sparks-heading">
+					<div class="container-fluid js-padding d-flex flex-column h-100">
+						<div class="row h-100 align-items-stretch justify-content-center gx-4">
+							<div class="col-12 col-lg-8 order-2 order-lg-1 d-flex flex-column justify-content-center h-100">
+								<div class="sparks-section-text">
+									<h2 id="sparks-heading" class="mb-3">Die SPARKS-Allianz</h2>
+									<p class="lead">Die SPARKS-Allianz ist ein lockeres Bündnis gleichgesinnter Organisationen in Star Citizen. Ziel ist es, Kooperation, gegenseitige Unterstützung und regelmäßige gemeinsame Events zu fördern — ohne die Eigenständigkeit unserer Partner zu beschneiden.</p>
+									<ul class="mb-3">
+										<li>Koordinierte Operationen &amp; gemeinsame Events</li>
+										<li>Geteilte Intelligenz und Handelsnetze</li>
+										<li>Unterstützung bei Notfällen und Einsätzen</li>
+										<li>Gelegentliche Cross-Org-Projekte und Community-Austausch</li>
+									</ul>
+								</div>
+								<div class="mt-3 text-start">
+									<a href="#" class="btn btn-light text-dark btn-lg">Mehr erfahren</a>
+								</div>
+							</div>
+							<div class="col-12 col-lg-4 text-center order-1 order-lg-2 mb-4 mb-lg-0 d-flex align-items-center justify-content-center h-100">
+								<img src="/assets/img/Sparks-Logo-hoch.png" alt="Sparks Alliance" class="sparks-logo img-fluid" />
+							</div>
+						</div>
+					</div>
+				</section>
 			</div>
 		</div>
 		
