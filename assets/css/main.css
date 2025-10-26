@@ -126,7 +126,7 @@ header .navbar {
 	height: 100%;
 	pointer-events: none;
 	z-index: 0;
-	background: rgba(0,0,0,0.12);
+	background: rgba(0,0,0,0.3);
 	-webkit-mask-image: radial-gradient(circle at left bottom, rgb(0, 0, 0) 0%, rgba(0,0,0,0.9) 30%, rgba(0,0,0,0.5) 45%, rgba(0,0,0,0) 100%);
 	mask-image: radial-gradient(circle at left bottom, rgb(0, 0, 0) 0%, rgba(0,0,0,0.9) 30%, rgba(0,0,0,0.5) 45%, rgba(0,0,0,0) 100%);
 	-webkit-mask-repeat: no-repeat;
@@ -134,8 +134,8 @@ header .navbar {
 	backdrop-filter: blur(8px);
 	-webkit-backdrop-filter: blur(8px);
 	opacity: 0;
-	transform: scale(0.6);
-	transition: opacity .6s ease, transform .8s cubic-bezier(.2,.9,.2,1);
+	transform: scale(0.1);
+	transition: opacity 2s ease, transform 2s cubic-bezier(.1,.9,.1,1);
 	transform-origin: left bottom;
 }
 
