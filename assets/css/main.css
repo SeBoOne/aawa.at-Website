@@ -112,6 +112,19 @@ header .navbar {
 		#section2 .aawa-logo{ width: 420px; }
 }
 
+.aawa-logo{
+	opacity: 0;
+	transform: translateY(40px) scale(0.98);
+	transition: transform 2s cubic-bezier(.2,.9,.2,1), opacity .5s ease;
+	transition-delay: 0s;
+}
+
+#section2 .content.blur-active .aawa-logo{
+	opacity: 1;
+	transform: translateY(0) scale(1);
+	transition-delay: 0.3s;
+}
+
 #section2 .content{
 	position: relative;
 	overflow: visible;
@@ -380,15 +393,15 @@ header .navbar {
 /* Sparks logo entrance animation */
 .sparks-logo{
 	opacity: 0;
-	transform: translateY(18px) scale(0.98);
-	transition: transform .75s cubic-bezier(.2,.9,.2,1), opacity .5s ease;
+	transform: translateY(40px) scale(0.98);
+	transition: transform 2s cubic-bezier(.2,.9,.2,1), opacity .5s ease;
 	transition-delay: 0s;
 }
 
 #section4 .content.blur-active .sparks-logo{
 	opacity: 1;
 	transform: translateY(0) scale(1);
-	transition-delay: 0.12s; /* slight delay so blur starts first */
+	transition-delay: 0.3s;
 }
 
 #section4 section{
