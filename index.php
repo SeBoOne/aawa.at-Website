@@ -111,7 +111,7 @@
 							<div id="DEC-Card" class="col d-flex">
 								<div class="cards card h-100 shadow-sm text-white d-flex flex-column w-100">
 									<div class="card-body d-flex flex-column flex-grow-1">
-										<img class="card-image" src="assets/img/aawa_dep-logos/AAWA_Patches_DEC_klein.png" alt="DEC">
+										<img class="card-image" src="assets/img/aawa_dep-logos/AAWA_Patches_DEC_Klein.png" alt="DEC">
 										<h2 class="card-title">DEC</h2>
 										<h5 class="card-title">Department of Engineering and Construction</h5>
 										<p class="mt-lg-card card-text">Wir machen keine Hausbesuche,<br> wir sind das Haus!</p>
@@ -123,7 +123,7 @@
 							<div id="MD-Card" class="col d-flex">
 								<div class="cards card h-100 shadow-sm text-white d-flex flex-column w-100">
 									<div class="card-body d-flex flex-column flex-grow-1">
-										<img class="card-image" src="assets/img/aawa_dep-logos/AAWA_Patches_MD_klein.png" alt="MD">
+										<img class="card-image" src="assets/img/aawa_dep-logos/AAWA_Patches_MD_Klein.png" alt="MD">
 										<h2 class="card-title">MD</h2>
 										<h5 class="card-title">Merchant Department</h5>
 										<p class="mt-lg-card card-text">Atlas trägt die Welt auf seinen Schultern...<br>Den Rest besorgen wir!</p>
@@ -135,7 +135,7 @@
 							<div id="AMD-Card" class="col d-flex">
 								<div class="cards card h-100 shadow-sm text-white d-flex flex-column w-100">
 									<div class="card-body d-flex flex-column flex-grow-1">
-										<img class="card-image" src="assets/img/aawa_dep-logos/AAWA_Patches_AMD_klein.png" alt="AMD">
+										<img class="card-image" src="assets/img/aawa_dep-logos/AAWA_Patches_AMD_Klein.png" alt="AMD">
 										<h2 class="card-title">AMD</h2>
 										<h5 class="card-title">Assistance and Maintenance Department</h5>
 										<p class="mt-lg-card card-text">Die Butter auf deinem Brot!<br>Die Kugel in deinem Lauf!</p>
@@ -147,7 +147,7 @@
 							<div id="SD-Card" class="col d-flex">
 								<div class="cards card h-100 shadow-sm text-white d-flex flex-column w-100">
 									<div class="card-body d-flex flex-column flex-grow-1">
-										<img class="card-image" src="assets/img/aawa_dep-logos/AAWA_Patches_SD_klein.png" alt="SD">
+										<img class="card-image" src="assets/img/aawa_dep-logos/AAWA_Patches_SD_Klein.png" alt="SD">
 										<h2 class="card-title">SD</h2>
 										<h5 class="card-title">Security Department</h5>
 										<p class="mt-lg-card card-text">An deiner Seite!<br> Aber dem Gegner im Genick...</p>
