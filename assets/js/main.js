@@ -1,3 +1,5 @@
+var loaderStart = (typeof performance !== 'undefined' && performance.now) ? performance.now() : Date.now();
+
 new fullpage('#fullpage', {
     licenseKey: '|"0GJ!M#i7',
     autoScrolling:true,
@@ -72,7 +74,7 @@ new fullpage('#fullpage', {
 });
 
 
-function adjustSection3Padding() {
+function adjustSectionPadding() {
     var header = document.querySelector('header');
     if (!header) return;
     var h = header.offsetHeight;
@@ -82,11 +84,10 @@ function adjustSection3Padding() {
     });
 }
 
-window.addEventListener('load', adjustSection3Padding);
-window.addEventListener('resize', adjustSection3Padding);
-adjustSection3Padding();
+window.addEventListener('load', adjustSectionPadding);
+window.addEventListener('resize', adjustSectionPadding);
+adjustSectionPadding();
 
-// If the page starts on section4, enable the radial blur immediately
 window.addEventListener('load', function(){
     setTimeout(function(){
         var s4sec = document.getElementById('section4');
@@ -95,4 +96,20 @@ window.addEventListener('load', function(){
             if (s4) s4.classList.add('blur-active');
         }
     }, 50);
+});
+
+/* siteLoader */
+window.addEventListener('load', function(){
+    var minVisibleMs = 3000;
+    var now = (typeof performance !== 'undefined' && performance.now) ? performance.now() : Date.now();
+    var elapsed = now - loaderStart;
+    var wait = Math.max(0, minVisibleMs - elapsed);
+    setTimeout(function(){
+        var loader = document.getElementById('site-loader');
+        if (!loader) return;
+        loader.classList.add('site-loader--hidden');
+        setTimeout(function(){
+            if (loader && loader.parentNode) loader.parentNode.removeChild(loader);
+        }, 600);
+    }, wait);
 });

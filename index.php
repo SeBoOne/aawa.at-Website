@@ -15,6 +15,13 @@
 
 <body>
 
+	<div id="site-loader" class="site-loader" role="status" aria-live="polite">
+		<div class="site-loader-inner">
+			<img src="/assets/img/AAWA_Logo_800x800.png" alt="AAWA loading" class="loader-logo" />
+			<div class="loader-spinner" aria-hidden="true"></div>
+		</div>
+	</div>
+
 	<header class="border-bottom bg-dark-subtle-oc bg-opacity-10">
 
 		<nav class="navbar navbar-expand-lg">
@@ -30,7 +37,7 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
+							<a class="nav-link active" aria-current="page" href="/">Home</a>
 						</li>
 
 						<li class="nav-item">
