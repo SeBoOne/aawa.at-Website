@@ -33,6 +33,16 @@ header .navbar {
 	transition: .5s all;
 }
 
+#nav-logo{
+	height: 5rem;
+ 	position: absolute;
+	display: flex;
+}
+
+#nav-logo img{
+	filter: drop-shadow(0 4px 12px rgba(0,0,0,0.6));
+}
+
 .content {
 	padding: 20px;
 	box-sizing: border-box;
@@ -425,6 +435,11 @@ header .navbar {
   .mt-lg-card {
 	text-shadow: 0 0 15px black;
   }
+  .ms-lg-6 {
+    margin-left: 6rem !important;
+  }
+}
+@media (min-width: 992px) {
 }
 
 /* Site loader */

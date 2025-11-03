@@ -28,7 +28,8 @@
 
 			<div class="container-fluid">
 
-				<a class="navbar-brand nav-link" href="https://aawa.at"><img src="/assets/img/AAWA_Logo_800x800.png" width="30" height="30" alt=""> AAWA</a>
+				<a href="https://aawa.at" id="nav-logo"><img src="/assets/img/AAWA_Logo_800x800.png" alt=""></a>
+				<a class="navbar-brand nav-link ms-lg-6" href="https://aawa.at">AAWA</a>
 
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -227,6 +228,14 @@
 					</div>
 				</section>
 			</div>
+		</div>
+
+		<div class="section fp-auto-height" id="section5">
+			<footer class="border-top bg-dark-subtle text-center py-4">
+				<div class="container">
+					<p class="mb-0">&copy; 2025 AAWA - Austrian Agency for World Architects. Alle Rechte vorbehalten.</p>
+				</div>
+			</footer>
 		</div>
 		
 	</main>
