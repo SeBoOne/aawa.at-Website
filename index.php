@@ -22,75 +22,20 @@
 		</div>
 	</div>
 
-	<header class="border-bottom bg-dark-subtle-oc bg-opacity-10">
-
-		<nav class="navbar navbar-expand-lg">
-
-			<div class="container-fluid">
-
-				<a href="https://aawa.at" id="nav-logo"><img src="/assets/img/AAWA_Logo_800x800.png" alt=""></a>
-				<a class="navbar-brand nav-link ms-lg-6" href="https://aawa.at">AAWA</a>
-
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="/">Home</a>
-						</li>
-
-						<li class="nav-item">
-							<a class="nav-link" href="#">Wer sind wir</a>
-						</li>
-
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							Unsere Abteilungen
-							</a>
-
-							<ul class="dropdown-menu">
-								<a class="dropdown-item" href="#">DEC</a>
-								<a class="dropdown-item" href="#">MD</a>
-								<a class="dropdown-item" href="#">AMD</a>
-								<a class="dropdown-item" href="#">SD</a>
-							</ul>
-						</li>
-
-						<li class="nav-item">
-							<a class="nav-link" href="#">Die SPARKS-Allianz</a>
-						</li>
-
-					</ul>
-
-					<ul class="navbar-nav list-inline">
-						<li class="">
-							<a class="nav-link" href="#" rel="nofollow" target=""><i class="fab fa-youtube"></i></a>
-						</li>
-
-						<li class="nav-item">
-							<a class="nav-link" href="#" rel="nofollow" target=""><i class="fab fa-twitter"></i></a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		
-	</header>
-    <main id="fullpage">
+	<?php include __DIR__ . '/php/header.php'; ?>
+    <main id="home-fullpage">
 	
-		<div class="section active" id="section1">
+		<div class="section" id="section1" data-anchor="landing">
 			<div class="content">
 
 				<div id="video">
-					<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-						<source src="/assets/img/AAWA_Compilation1.mp4" type="video/mp4">
+					<video playsinline="playsinline" data-autoplay muted="muted" loop="loop" disablePictureInPicture>
+						<source data-src="/assets/img/AAWA_Compilation1.mp4" type="video/mp4">
 					</video>
 				</div>
 
 				<div id="videoOverlay">
-					<div id="title">
+					<div id="title" class="aawa-logo-font">
 						<p class="display-1" ><strong>Austrian Agency</strong></p>
 						<p class="h4" >for</p>
 						<p class="display-1" ><strong>World Architects</strong></p>
@@ -99,8 +44,8 @@
 
 			</div>
 		</div>
-		
-		<div class="section" id="section2">
+
+		<div class="section" id="section2" data-anchor="who">
 			<div class="content">
 				<section class="py-5 text-light d-flex flex-column h-100" aria-labelledby="who-heading">
 					<div class="container-fluid js-padding d-flex flex-column h-100">
@@ -130,7 +75,7 @@
 										<p>Unsere Mitglieder kommen aus verschiedenen Hintergründen — Baukünstler, Händler, Ingenieure und Wächter — und bringen ihre Stärken in Projekte ein. Egal ob du neu im Spiel bist oder ein erfahrener Pilot: Bei uns findest du Unterstützung und Mitspieler.</p>
 									</div>
 									<div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
-										<a href="#" class="btn btn-outline-light btn-lg btn-toolbar">Mehr zu uns...</a>
+										<a href="/who.php" class="btn btn-outline-light btn-lg btn-toolbar">Mehr zu uns...</a>
 									</div>
 								</div>
 							</div>
@@ -139,8 +84,8 @@
 				</section>
 			</div>
 		</div>
-		
-		<div class="section" id="section3">
+
+		<div class="section" id="section3" data-anchor="departments">
 			<div class="content">
 				<section class="text-center d-flex flex-column h-100" aria-labelledby="departments-heading">
 					<div class="js-padding d-flex flex-column flex-grow-1">
@@ -155,7 +100,7 @@
 										<h2 class="card-title">DEC</h2>
 										<h5 class="card-title">Department of Engineering and Construction</h5>
 										<p class="mt-lg-card card-text">Wir machen keine Hausbesuche,<br> wir sind das Haus!</p>
-										<a href="#DEC" class="mt-auto btn">Mehr erfahren</a>
+										<a href="/departments.php#departments/DEC" class="mt-auto btn">Mehr erfahren</a>
 									</div>
 								</div>
 							</div>
@@ -167,7 +112,7 @@
 										<h2 class="card-title">MD</h2>
 										<h5 class="card-title">Merchant Department</h5>
 										<p class="mt-lg-card card-text">Atlas trägt die Welt auf seinen Schultern...<br>Den Rest besorgen wir!</p>
-										<a href="#MD" class="mt-auto btn">Mehr erfahren</a>
+										<a href="/departments.php#departments/MD" class="mt-auto btn">Mehr erfahren</a>
 									</div>
 								</div>
 							</div>
@@ -179,7 +124,7 @@
 										<h2 class="card-title">AMD</h2>
 										<h5 class="card-title">Assistance and Maintenance Department</h5>
 										<p class="mt-lg-card card-text">Die Butter auf deinem Brot!<br>Die Kugel in deinem Lauf!</p>
-										<a href="#AMD" class="mt-auto btn">Mehr erfahren</a>
+										<a href="/departments.php#departments/AMD" class="mt-auto btn">Mehr erfahren</a>
 									</div>
 								</div>
 							</div>
@@ -191,7 +136,7 @@
 										<h2 class="card-title">SD</h2>
 										<h5 class="card-title">Security Department</h5>
 										<p class="mt-lg-card card-text">An deiner Seite!<br> Aber dem Gegner im Genick...</p>
-										<a href="#SD" class="mt-auto btn">Mehr erfahren</a>
+										<a href="/departments.php#departments/SD" class="mt-auto btn">Mehr erfahren</a>
 									</div>
 								</div>
 							</div>
@@ -200,8 +145,8 @@
 					</section>
 			</div>
 		</div>
-		
-		<div class="section" id="section4">
+
+		<div class="section" id="section4" data-anchor="sparks">
 			<div class="content">
 				<section class="py-5 text-light d-flex flex-column h-100" aria-labelledby="sparks-heading">
 					<div class="container-fluid js-padding d-flex flex-column h-100">
@@ -218,7 +163,7 @@
 									</ul>
 								</div>
 								<div class="mt-3 text-start">
-									<a href="#" class="btn btn-light text-dark btn-lg">Mehr erfahren</a>
+									<a href="/sparks.php" class="btn btn-light text-dark btn-lg">Mehr erfahren</a>
 								</div>
 							</div>
 							<div class="col-12 col-lg-4 text-center order-1 order-lg-2 mb-4 mb-lg-0 d-flex align-items-center justify-content-center h-100">
@@ -230,12 +175,8 @@
 			</div>
 		</div>
 
-		<div class="section fp-auto-height" id="section5">
-			<footer class="border-top bg-dark-subtle text-center py-4">
-				<div class="container">
-					<p class="mb-0">&copy; 2025 AAWA - Austrian Agency for World Architects. Alle Rechte vorbehalten.</p>
-				</div>
-			</footer>
+		<div class="section fp-auto-height" id="section5" data-anchor="footer">
+			<?php include __DIR__ . '/php/footer.php'; ?>
 		</div>
 		
 	</main>

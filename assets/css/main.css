@@ -18,7 +18,7 @@ body, html {
     background-color: #282828;
 	background-image: url(/assets/img/background-image.jpg);
 	background-size: cover;
-    font-family: 'Ge Body', 'Maven Pro', Comfortaa;
+    font-family: 'Ge Body', 'Maven Pro', 'Comfortaa';
 }
 
 header{
@@ -35,12 +35,24 @@ header .navbar {
 
 #nav-logo{
 	height: 5rem;
- 	position: absolute;
+	position: absolute;
 	display: flex;
+	align-items: center;
+	font-size: 2rem;
 }
 
 #nav-logo img{
 	filter: drop-shadow(0 4px 12px rgba(0,0,0,0.6));
+	height: inherit;
+	margin-right: 0.5rem;
+}
+
+#navbarSupportedContent{
+	margin-left: 14rem;
+}
+
+.aawa-logo-font{
+	font-family: 'Brocades Sans', 'Ge Body', 'Maven Pro', 'Comfortaa';
 }
 
 .content {
@@ -51,8 +63,9 @@ header .navbar {
 	overflow: hidden;
 }
 
+/** Home-Page **/
+
 /* Section 1 - Home */
-/* Section 1 - Video Background */
 #section1 #video {
 	width: 100dvw;
 	height: 100dvh;
@@ -191,7 +204,7 @@ header .navbar {
 	padding: 20px 0 0 0;
 }
 
-/* Section 3 - Animations */
+/* Department-Card In/Out Animations */
 
 #section3 #DEC-Card.animateInDown{
 	animation: fadeInDown;
@@ -268,8 +281,9 @@ header .navbar {
 	animation-duration: 0.5s;
 	opacity: 0;
 }
+/* Department-Card In/Out Animations End */
 
-/* Section 3 - Dep.-Card Hover Effects */
+/* Dep.-Card Hover Effects */
 
 #section3 .cards{
 	position: relative;
@@ -346,7 +360,10 @@ header .navbar {
 	text-shadow: 0 0 15px black;
 }
 
+/* Dep.-Card Hover Effects End */
+
 /* Section 3 - End */
+
 
 /* Section 4 - Sparks-Allianz */
 
@@ -362,9 +379,9 @@ header .navbar {
 	.sparks-logo{ max-height: 75vh; }
 }
 
-.sparks-section-text{ margin-top: 1.5rem; }
-
-/* Section 4 - End */
+.sparks-section-text{
+	margin-top: 1.5rem;
+}
 
 #section4 .content{
 	position: relative;
@@ -387,20 +404,17 @@ header .navbar {
 	mask-repeat: no-repeat;
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
-	/* start hidden/scaled down */
 	opacity: 0;
 	transform: scale(0.5);
 	transition: opacity .65s ease, transform .1s cubic-bezier(.2,.9,.2,1);
 	transform-origin: left bottom;
 }
 
-/* animate radial blur when the section becomes active */
 #section4 .content.blur-active::before{
 	opacity: 1;
 	transform: scale(1);
 }
 
-/* Sparks logo entrance animation */
 .sparks-logo{
 	opacity: 0;
 	transform: translateY(40px) scale(0.98);
@@ -426,6 +440,16 @@ header .navbar {
 	}
 }
 
+/* Section 4 - End */
+
+/** Home-Page End **/
+
+/** Departments-page **/
+
+/* empty so far */
+
+/** Departments-page End **/
+
 /* custom bootstrap */
 .bg-dark-subtle-oc {
 	background-color: rgba(26, 29, 32,var(--bs-bg-opacity)) !important;
@@ -441,6 +465,7 @@ header .navbar {
 }
 @media (min-width: 992px) {
 }
+/* End custom bootstrap */
 
 /* Site loader */
 #site-loader{
@@ -530,3 +555,18 @@ header .navbar {
 @media (min-width: 992px){
 	.loader-logo{ width: 200px; }
 }
+/* End Site loader */
+
+/* Dropdown on hover for desktop */
+@media (hover: hover) and (pointer: fine) {
+	.navbar-nav .dropdown:hover > .dropdown-menu{
+		display: block;
+		margin-top: 0;
+	}
+	
+	.navbar-nav .dropdown .dropdown-menu{
+		transition: opacity .15s ease;
+		opacity: 1;
+	}
+}
+/* End Dropdown on hover for desktop */
